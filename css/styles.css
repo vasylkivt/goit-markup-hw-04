@@ -1,36 +1,28 @@
 :root {
-  /* Головний колір стилю */
   --primary-accent-color: #4d5ae5;
+  --primary-accent-color-hover: #404bbf;
   --secondary-accent-color: #31d0aa;
-  /* Колір тексту */
+
   --primary-text-color-dark: #434455;
   --secondary-text-color-dark: #000000;
   --primary-text-color-light: #e7e9fc;
   --secondary-text-color-light: #ffffff;
-  /* Колір заголовків */
+
   --primary-title-color-dark: #2e2f42;
   --secondary-title-color-dark: #000000;
   --primary-title-color-light: #ffffff;
   --secondary-title-color-light: #f4f4fd;
-  /* Колір фону */
+
   --primary-background-color-light: #ffffff;
   --secondary-background-color-light: #f4f4fd;
   --primary-background-color-dark: #2e2f42;
-  --secondary-background-color-dark: #000000;
-  /* Шрифти */
-  --primary-font-title: 'Roboto', sans-serif;
-  --secondary-font-title: 'Raleway', sans-serif;
-  --primary-font-text: 'Roboto', sans-serif;
-  /* --secondary-font-text: ; */
 
-  --outline-pri: 2px solid rgb(150, 255, 0);
-  --outline-seco: 2px solid rgb(255, 0, 0);
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 
-  --background-pri: rgb(150, 150, 150);
-  --background-seco: rgb(200, 150, 100);
+  --outline-pri: 1px solid rgb(150, 255, 0);
 }
-/* Стандартні Налаштування */
-
+/* standard settings */
 h1,
 h2,
 h3,
@@ -57,10 +49,11 @@ button {
   cursor: pointer;
 }
 body {
-  background-color: var(--primary-background-color-light);
+  min-width: 1440px;
 
+  background-color: var(--primary-background-color-light);
   color: var(--primary-text-color-dark);
-  font-family: var(--primary-font-text);
+  font-family: var(--primary-font);
   font-size: 16px;
 }
 .list {
@@ -77,7 +70,8 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* .container * {
   outline: var(--outline-pri);
@@ -112,16 +106,19 @@ body {
 /* ================== Шапка ================== */
 .header {
   border-bottom: 1px solid var(--primary-text-color-light);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Логотип */
 
 .logo {
-  /* display: inline-block;
+  display: inline-block;
   padding-top: 24px;
-  padding-bottom: 24px; */
+  padding-bottom: 24px;
   margin-right: 77px;
   color: var(--primary-accent-color);
   font-family: var(--secondary-font-title);
@@ -149,26 +146,51 @@ body {
   display: flex;
   gap: 40px;
 }
-/* .menu-item:not(:last-child) {
-  margin-right: 40px;
-} */
-.menu-link {
-  /* display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px; */
 
+.menu-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--primary-title-color-dark);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* .corrent{
+
+/* .menu-link::after,
+.menu-link::after {
+  display: none;
+  content: '';
+  background: var(--primary-accent-color-hover);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-top: 24px;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+  display: block;
+}
+
+.corrent {
   color: var(--primary-accent-color);
+}
+.corrent::after {
+  display: block;
+  content: '';
+  background: var(--primary-accent-color-hover);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-top: 24px;
 } */
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--primary-text-color-dark);
 }
+
 .menu-link:active {
   color: var(--primary-accent-color);
 }
@@ -180,17 +202,21 @@ body {
   display: flex;
   gap: 40px;
 }
-/* .contacts-header-item:not(:last-child) {
-  margin-right: 40px;
-} */
+
+.contacts-header-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
 
 .contacts-header-link {
-  /* display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 24px;
-  padding-bottom: 24px; */
+  padding-bottom: 24px;
 
   color: var(--primary-text-color-dark);
-
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -202,12 +228,18 @@ body {
 
 /* ================== Контент ================== */
 
-.main-team {
-  background-color: var(--secondary-background-color-light);
-}
 /* Hero Контент */
+
 .hero {
-  background-color: var(--primary-background-color-dark);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/background/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   padding-top: 192px;
   padding-bottom: 192px;
 }
@@ -221,7 +253,6 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  /* letter-spacing: 0.02em; */
 }
 .hero {
   text-align: center;
@@ -249,6 +280,21 @@ body {
 /* /Hero Контент */
 
 /* benefits Контент */
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color-light);
+}
+
 .company-benefits {
   padding-bottom: 0;
 }
@@ -260,7 +306,7 @@ body {
   gap: 24px;
 }
 .company-benefits-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 4 * 24px) / 5);
 }
 /* /benefits Контент */
 /* products Контент */
@@ -274,6 +320,13 @@ body {
 /* /products Контент */
 
 /* main-team Контент */
+
+.main-team {
+  background-color: var(--secondary-background-color-light);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .main-team .section-title {
   margin-bottom: 72px;
 }
@@ -285,6 +338,32 @@ body {
   padding-bottom: 32px;
   text-align: center;
 }
+.team-social-media-bgr {
+  background-color: var(--primary-accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-media-bgr:hover,
+.team-social-media-bgr:focus {
+  background-color: var(--primary-accent-color-hover);
+}
+
+.team-social-media-list {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-social-media-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
 .main-team-list {
   display: flex;
   gap: 24px;
@@ -293,6 +372,33 @@ body {
   margin-bottom: 8px;
 }
 /* main-team Контент */
+
+.customers .section-title {
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-icon {
+  box-sizing: content-box;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 104px;
+  height: 56px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  fill: #8e8f99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--primary-accent-color-hover);
+  border-color: var(--primary-accent-color-hover);
+}
+
 /* ================== /Контент ================== */
 
 /* ================== Футер ================== */
@@ -300,6 +406,9 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-background-color-dark);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .text-footer {
   width: 264px;
@@ -310,7 +419,42 @@ body {
 }
 .footer .logo {
   margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+.footer-content {
+  display: flex;
+  gap: 120px;
+}
+.footer-social-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-media-icon {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+}
+.footer-social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-media-item:hover,
+.footer-social-media-item:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.footer-social-media-text {
+  margin-bottom: 16px;
+  color: var(--secondary-text-color-light);
+}
+
 /* ================== /Футер ================== */
 
 /* ================== Портфоліо ================== */

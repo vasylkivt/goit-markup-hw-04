@@ -188,7 +188,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--primary-text-color-dark);
+  color: var(--primary-accent-color);
 }
 
 .menu-link:active {
@@ -281,19 +281,17 @@ body {
 /* /Hero Контент */
 
 /* benefits Контент */
+.benefits-icon-bgr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color-light);
+}
 .benefits-icon {
   width: 64px;
   height: 64px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: content-box;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-radius: 4px;
-  background-color: var(--secondary-background-color-light);
 }
 
 .company-benefits {
@@ -307,7 +305,7 @@ body {
   gap: 24px;
 }
 .company-benefits-item {
-  flex-basis: calc((100% - 4 * 24px) / 5);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 /* /benefits Контент */
 /* products Контент */
@@ -339,22 +337,24 @@ body {
   padding-bottom: 32px;
   text-align: center;
 }
-.team-social-media-bgr {
-  background-color: var(--primary-accent-color);
+.team-social-media-item {
   width: 40px;
+}
+
+.team-social-media-link {
   height: 40px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary-accent-color);
+  border-radius: 50%;
 }
-.team-social-media-bgr:hover,
-.team-social-media-bgr:focus {
+.team-social-media-link:hover,
+.team-social-media-link:focus {
   background-color: var(--primary-accent-color-hover);
 }
 
 .team-social-media-list {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -381,23 +381,34 @@ body {
   display: flex;
   gap: 24px;
 }
+
 .customers-icon {
-  box-sizing: content-box;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   width: 104px;
   height: 56px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
   fill: #8e8f99;
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--primary-accent-color-hover);
+.customers-item {
+  width: 168px;
+}
+
+.customers-link {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--primary-accent-color-hover);
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--primary-accent-color-hover);
 }
 
 /* ================== /Контент ================== */
@@ -427,6 +438,7 @@ body {
   display: flex;
   gap: 120px;
 }
+
 .footer-social-media-list {
   display: flex;
   gap: 16px;
@@ -437,17 +449,21 @@ body {
   height: 24px;
   fill: #f4f4fd;
 }
-.footer-social-media-item {
+.footer-social-mebia-item {
+  width: 40px;
+}
+
+.footer-social-media-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-media-item:hover,
-.footer-social-media-item:focus {
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
   background-color: var(--secondary-accent-color);
 }
 

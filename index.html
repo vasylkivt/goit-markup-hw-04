@@ -43,17 +43,17 @@
           <ul class="contacts-header list">
             <li class="contacts-header-item">
               <a class="contacts-header-link link" href="mailto:info@devstudio.com">
-                <svg class="contacts-header-icon">
+                <!-- <svg class="contacts-header-icon">
                   <use href="./images/sprite.svg#icon-email"></use>
-                </svg>
+                </svg> -->
                 info@devstudio.com</a
               >
             </li>
             <li class="contacts-header-item">
               <a class="contacts-header-link link" href="tel:+11(000)111-11-11">
-                <svg class="contacts-header-icon">
+                <!-- <svg class="contacts-header-icon">
                   <use href="./images/sprite.svg#icon-phone"></use>
-                </svg>
+                </svg> -->
                 +11 (000) 111-11-11</a
               >
             </li>
@@ -78,9 +78,11 @@
           <h2 class="hidden-titles">company benefits</h2>
           <ul class="list company-benefits-list">
             <li class="company-benefits-item">
-              <svg class="benefits-icon">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
+              <div class="benefits-icon-bgr">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="sub-title benefits-title">Strategy</h3>
               <p class="benefits-description text">
                 Our goal is to identify the business problem to walk away with the perfect and
@@ -88,9 +90,11 @@
               </p>
             </li>
             <li class="company-benefits-item">
-              <svg class="benefits-icon">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
+              <div class="benefits-icon-bgr">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="sub-title benefits-title">Punctuality</h3>
               <p class="benefits-description text">
                 OBring the key message to the brand's audience for the best price within the
@@ -98,9 +102,11 @@
               </p>
             </li>
             <li class="company-benefits-item">
-              <svg class="benefits-icon">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
+              <div class="benefits-icon-bgr">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="sub-title benefits-title">Diligence</h3>
               <p class="benefits-description text">
                 Research and confirm brands that present the strongest digital growth opportunities
@@ -108,9 +114,11 @@
               </p>
             </li>
             <li class="company-benefits-item">
-              <svg class="benefits-icon">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
+              <div class="benefits-icon-bgr">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="sub-title benefits-title">Technologies</h3>
               <p class="benefits-description text">
                 ODesign practice focused on digital experiences. We bring forth a deep passion for
@@ -158,34 +166,54 @@
                 <p class="text">Product Designer</p>
 
                 <ul class="list team-social-media-list">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -202,34 +230,54 @@
                 <h3 class="sub-title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="list team-social-media-list">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -246,34 +294,54 @@
                 <h3 class="sub-title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <ul class="list team-social-media-list">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -289,34 +357,54 @@
                 <h3 class="sub-title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <ul class="list team-social-media-list">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
-                    </li>
-                  </a>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
-                    <li class="team-social-media-bgr">
+                    </a>
+                  </li>
+                  <li class="team-social-media-item">
+                    <a
+                      class="team-social-media-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="team-social-media-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -330,42 +418,42 @@
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a href="">
+              <a href="" class="customers-link">
                 <svg class="customers-icon">
                   <use href="./images/sprite.svg#icon-company-6"></use>
                 </svg>
@@ -389,34 +477,55 @@
         <div>
           <p class="footer-social-media-text text">Social media</p>
           <ul class="list footer-social-media-list">
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-              <li class="footer-social-media-item">
+            <li class="footer-social-mebia-item">
+              <a
+                class="footer-social-media-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <svg class="footer-social-media-icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
-              </li>
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-              <li class="footer-social-media-item">
+              </a>
+            </li>
+            <li class="footer-social-mebia-item">
+              <a
+                class="footer-social-media-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <svg class="footer-social-media-icon">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
-              </li>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-              <li class="footer-social-media-item">
+              </a>
+            </li>
+
+            <li class="footer-social-mebia-item">
+              <a
+                class="footer-social-media-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <svg class="footer-social-media-icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
-              </li>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
-              <li class="footer-social-media-item">
+              </a>
+            </li>
+            <li class="footer-social-mebia-item">
+              <a
+                class="footer-social-media-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <svg class="footer-social-media-icon">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
